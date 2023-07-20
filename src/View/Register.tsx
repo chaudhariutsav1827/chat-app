@@ -1,5 +1,5 @@
 import { Container } from "@mui/material"
-import RegisterDiv from "../components/RegisterDiv"
+import RegisterDiv from "../components/RegisterDiv/RegisterDiv"
 
 const Register = () => {
     return(

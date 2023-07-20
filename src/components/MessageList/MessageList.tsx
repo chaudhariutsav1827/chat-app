@@ -4,11 +4,13 @@ const messages = [
     { id: 1, sender: 'John', content: 'Hello!', timestamp: '10:00 AM' },
     { id: 2, sender: 'Alice', content: 'Hi there!', timestamp: '10:01 AM' },
     { id: 3, sender: 'John', content: 'How are you?', timestamp: '10:02 AM' },
+    { id: 4, sender: 'John', content: 'How are you?', timestamp: '10:02 AM' },
+    { id: 5, sender: 'John', content: 'How are you?', timestamp: '10:02 AM' },
 ];
 
 export const MessageList = () => {
     return (
-        <List>
+        <List sx={{marginBottom:'40px'}}>
             {messages.map((message) => (
                 <ListItem
                     key={message.id}

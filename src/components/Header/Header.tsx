@@ -1,4 +1,4 @@
-import { AppBar, Box, IconButton, Toolbar, Typography, Button, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Divider, Drawer, useMediaQuery } from "@mui/material"
+import { AppBar, Box, IconButton, Toolbar, Typography, Button, useMediaQuery } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu';
 
 type headerProps = {
@@ -10,7 +10,7 @@ export const Header = (props: headerProps) => {
     const matches = useMediaQuery('(max-width:600px)');
 
     return (
-        <Box sx={{ flexGrow: 1 ,position:'fixed' , top:'0',left:'0',right:'0'}}>
+        <Box sx={{ flexGrow: 1 ,position:'sticky', zIndex: 10, top:'0'}}>
             <AppBar position="static" sx={{ boxShadow: 'none' }}>
                 <Toolbar >
                     <IconButton

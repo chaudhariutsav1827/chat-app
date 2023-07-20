@@ -7,7 +7,7 @@ type sidebarProps = {
     toggleSidebar : (open:boolean)=>void
 }
 
-const Sidebar = (props:sidebarProps) => {
+export const Sidebar = (props:sidebarProps) => {
     const matches = useMediaQuery('(max-width:600px)');
 
     const list = () => (
@@ -45,7 +45,7 @@ const Sidebar = (props:sidebarProps) => {
         </Box>
     );
     return (
-        <Box sx={{ position: 'fixed', left: 0, top: 64, bottom: 0 ,overflow:'auto',backgroundColor:'azure'}} >
+        <Box sx={{ position: 'sticky', left: 0, top: 0, overflowY:'auto', backgroundColor:'azure'}} >
             {!matches && list()}
             {matches && <Drawer
                 anchor={'left'}
@@ -57,5 +57,3 @@ const Sidebar = (props:sidebarProps) => {
         </Box>
     )
 }
-
-export default Sidebar

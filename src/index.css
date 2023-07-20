@@ -2,3 +2,16 @@ body{
   margin: 0;
   padding: 0;
 }
+
+::-webkit-scrollbar{
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: hsl(0, 0%, 63%);
+  border-radius: 100vw;
+}
